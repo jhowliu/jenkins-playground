@@ -4,7 +4,10 @@ pipeline {
     stages {
         stage('Init') {
             echo 'Initializing'
-            echo 'ghprbActualCommit: ' $ghprbActualCommit
+        }
+        
+        stage('echo') {
+           echo 'ghprbActualCommit: ' $ghprbActualCommit
             echo 'ghprbActualCommitAuthor: ' $ghprbActualCommitAuthor
             echo 'ghprbActualCommitAuthorEmail: ' $ghprbActualCommitAuthorEmail
             echo 'ghprbPullDescription: ' $ghprbPullDescription
@@ -13,7 +16,8 @@ pipeline {
             echo 'ghprbPullTitle: ' $ghprbPullTitle
             echo 'ghprbSourceBranch: ' $ghprbSourceBranch
             echo 'ghprbTargetBranch: ' $ghprbTargetBranch
-            echo 'sha1: ' $sha1
+            echo 'sha1: ' $sha1   
+            
         }
     }
-}ourceBranch
+}
