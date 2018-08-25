@@ -7,7 +7,7 @@ pipeline {
                 echo "Initializing"
             }
         }
-        stage("build") {
+        staget("build") {
             steps {           
                 echo "Building"
             }
