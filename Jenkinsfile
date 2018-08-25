@@ -11,7 +11,9 @@ pipeline {
         stage("build") {
             steps {           
                 echo "${BRANCH_NAME}"
-                echo "${env.getEnvironment()}"
+                echo "${scmHead.getSourceOwner()}"
+                echo "${scmHead.getSourceRepo()}"
+                echo "${scmHead.getId()}"
             }
         }
        
