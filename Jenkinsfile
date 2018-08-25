@@ -5,7 +5,6 @@ pipeline {
         stage("Init") {
             steps {           
                 echo "Initializing"
-                echo "HouseKeeper"
             }
         }
       
