@@ -7,6 +7,12 @@ pipeline {
                 echo "Initializing"
             }
         }
+
+        stage("build") {
+            steps {           
+                echo $ghprbPullId
+            }
+        }
       
     }
     post { 
