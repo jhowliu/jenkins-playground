@@ -4,6 +4,7 @@ def GetPRID() {
     def prId = scmHead.getId()
     
     return prId
+}
 
 pipeline {
     agent any
