@@ -19,7 +19,9 @@ pipeline {
         stage("build") {
             steps {           
                 echo "${BRANCH_NAME}"
-                
+       
+                echo "${GetPRID()}"
+       
             }
         }
        
@@ -28,10 +30,7 @@ pipeline {
     post { 
         always { 
             echo 'I will always say Hello again!'
-            script {
-                
-                echo "${GetPRID()}"
-            }
+          
         }
     }
 }
