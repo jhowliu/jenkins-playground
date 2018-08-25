@@ -2,9 +2,10 @@ pipeline {
     agent any
 
     stages {
-        stage('Init') {
+        stage("Init") {
             steps {           
-                echo 'Initializing'
+                echo "Initializing"
+                echo "HouseKeeper"
             }
         }
 
