@@ -21,7 +21,10 @@ pipeline {
         }
 
         success {
-            pullRequest.addLabel("Build Successfully")
+            script {
+
+                pullRequest.addLabel("Build Successfully")
+            }
         }
     }
 }
