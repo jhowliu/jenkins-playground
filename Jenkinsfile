@@ -7,6 +7,11 @@ pipeline {
                 echo "Initializing"
             }
         }
+        stage("build") {
+            steps {           
+                echo "buidlddd"
+            }
+        }
       
     }
     post { 
