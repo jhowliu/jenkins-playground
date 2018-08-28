@@ -7,7 +7,7 @@ pipeline {
                 echo "Initializing"
             }
         }
-        stagte("build") {
+        stage("build") {
             steps {           
                 echo "buidlddd"
             }
